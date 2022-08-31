@@ -1,6 +1,8 @@
 package lms_126
 
 fun task3() {
-
-    TODO("Erase this line and write your solution")
+/*INPUT get base
+    INPUT get height
+    CALCULATE base*height*0,5=area
+    OUTPUT area */
 }

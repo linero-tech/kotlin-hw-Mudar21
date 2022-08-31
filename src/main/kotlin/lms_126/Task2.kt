@@ -1,6 +1,8 @@
 package lms_126
 
 fun task2() {
-
-    TODO("Erase this line and write your solution")
+//Input base of the rectangle
+    //Input the height of the rectangle
+    //area=base*height
+    //OUTPUT "area"
 }

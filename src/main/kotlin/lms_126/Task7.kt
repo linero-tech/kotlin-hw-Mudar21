@@ -1,6 +1,8 @@
 package lms_126
 
 fun task7() {
-
-    TODO("Erase this line and write your solution")
+    /* FOR number is 1 to 100
+    IF number is even
+    OUTPUT number
+     */
 }

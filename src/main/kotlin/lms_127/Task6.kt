@@ -1,7 +1,7 @@
 package lms_127
 
-fun task6(base1: Double, base2: Double, height: Double): Double { val a = (base1 + base2)
-    val result= (a * 0.5 * height)
+fun task6(base1: Double, base2: Double, height: Double): Double { val bothBases = (base1 + base2)
+    val result= (bothBases * 0.5 * height)
     println(result)
 
     return result

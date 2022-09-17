@@ -5,6 +5,6 @@ fun task4(base: Double, height: Double): Double {
     println(result)
     return result
 }
-fun main() { task4 (base = , height = )
+fun main() { task4 (base =5.0, height =10.0)
 }
 

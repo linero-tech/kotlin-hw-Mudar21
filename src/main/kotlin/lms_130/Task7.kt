@@ -1,6 +1,18 @@
 package lms_130
 
 fun task7(items: List<Int>): Int {
-
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    var result = 0
+    result = if (items.isEmpty()){
+        0
+    }else
+        items.first()
+    for (number in items){
+        if (number < result){
+            result = number
+        }
+    }
+    return result
+}
+fun main (){
+    println(task7(items = listOf(10,5,11)))
 }

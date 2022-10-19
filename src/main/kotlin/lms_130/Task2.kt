@@ -4,7 +4,7 @@ fun task2(items: List<Int>): Int {
     var result=0
     for(number in items.indices){
 
-        var index= items[number]
+        items[number]
 
         if(number % 2==0)
 

@@ -17,7 +17,7 @@ fun task11_2(guests: List<String>, condition: String): List<String> {
 fun main() {
 
     // Change the condition to either "-V", "-A", or "-K" to test your code under different conditions
-    val conditionOfInterest = "-K"
+    val conditionOfInterest = "-V"
     val listOfAttendees = listOf("Stéphanie-V", "Edmée-K", "Maëlla-K", "Océanne-K", "Géraldine-K", "Maëline-K")
 
     println("The event has a total of ${task11_1(listOfAttendees)} attendees.")

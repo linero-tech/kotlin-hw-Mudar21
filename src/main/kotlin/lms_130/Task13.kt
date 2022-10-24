@@ -1,18 +1,25 @@
 package lms_130
 
 fun task13_1(customers: List<String>): List<String> {
-
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    println(customers)
+    return customers.distinct()
 }
-
 fun task13_2(customers: List<String>): List<String> {
-
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    val once = mutableListOf<String>()
+    val moreThanOnce = mutableListOf<String>()
+    customers.forEach() { customer ->
+        if (customer !in once) once.add(customer)
+        else (moreThanOnce.add(customer))
+    }
+    return moreThanOnce.distinct()
 }
-
 fun task13_3(customers: List<String>): List<String> {
-
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    val result = mutableListOf<String>()
+    customers.forEach() { email ->
+        val (username, domain) = email.split("@")
+        result += domain.substringBefore(".")
+    }
+    return result.distinct()
 }
 
 fun main() {

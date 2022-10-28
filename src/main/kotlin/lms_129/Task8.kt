@@ -2,8 +2,8 @@ package lms_129
 
 fun task8(number: Int): Int {
 var result=0
-    val nmbrSum = number.toString().toList()
-    nmbrSum.forEach { result += it.toString().toInt() }
+   for (digit in number.toString())
+       result += digit.digitToInt()
     return result
 }
 fun main (){

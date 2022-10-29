@@ -37,3 +37,8 @@ fun task12_3(sells: List<Int>): Int {
 
     return result
 }
+fun main (){
+    task12_1(sells = listOf(20, 100, 800, 768, 765, 90, 10))
+    task12_2(sells = listOf(20, 100, 800, 768, 765, 90, 10))
+    task12_3(sells = listOf(20, 100, 800, 768, 765, 90, 10))
+}

@@ -11,6 +11,6 @@ fun task10(password: String): Boolean {
     return result
 }
 
-fun main(){
+fun main() {
     println(task10("123456dD$7"))
 }

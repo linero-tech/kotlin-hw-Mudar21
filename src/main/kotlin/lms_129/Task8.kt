@@ -7,5 +7,5 @@ var result=0
     return result
 }
 fun main (){
-    println(task8(number = 123))
+    println(task8(number = 3333))
 }

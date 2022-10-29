@@ -4,19 +4,18 @@ fun task13_1(customers: List<String>): List<String> {
     println(customers)
     return customers.distinct()
 }
+
 fun task13_2(customers: List<String>): List<String> {
     val once = mutableListOf<String>()
     val moreThanOnce = mutableListOf<String>()
-    customers.forEach() { customer ->
-        if (customer !in once) once.add(customer)
-        else (moreThanOnce.add(customer))
-    }
+    customers.forEach { customer -> if (customer !in once) once.add(customer) else (moreThanOnce.add(customer)) }
     return moreThanOnce.distinct()
 }
+
 fun task13_3(customers: List<String>): List<String> {
     val result = mutableListOf<String>()
-    customers.forEach() { email ->
-        val (username, domain) = email.split("@")
+    customers.forEach { email ->
+        val (_, domain) = email.split("@")
         result += domain.substringBefore(".")
     }
     return result.distinct()

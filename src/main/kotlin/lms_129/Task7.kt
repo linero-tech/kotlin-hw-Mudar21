@@ -7,6 +7,6 @@ fun task7(a: Int, b: Int): Int {
     }
     return result
 }
-fun main(){
-    println(task7(a=2, b=3))
+fun main() {
+    println(task7(a = 2, b = 3))
 }

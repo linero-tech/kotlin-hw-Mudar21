@@ -10,6 +10,6 @@ fun task6(number: Int): Int {
         }
         return result
     }
-fun main(){
+fun main() {
     println(task6(number = 678))
 }

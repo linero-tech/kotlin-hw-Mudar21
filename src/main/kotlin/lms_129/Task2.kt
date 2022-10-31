@@ -6,6 +6,6 @@ var result= false
     else if (number == 2) result=true
     return result
 }
-fun main(){
-  println(task2(number = 5))
+fun main() {
+    println(task2(number = 5))
 }

@@ -2,13 +2,18 @@ package lms_132
 
 fun task3(sentence: String?): String {
     val vowels = "aeiou"
-    var result = "*"
-    if (sentence !== null) {
+    var result = ""
+    if (sentence != null) {
         for (letter in sentence) {
-            if (vowels.contains(letter, ignoreCase = true)) result = sentence.replace(letter, '*')
+            if (vowels.contains(letter,ignoreCase = true)) {
+                result += "*"
+            } else {
+                result += letter
+            }
         }
-        println(result)
+
     }
+    println(result)
     return result
 }
 

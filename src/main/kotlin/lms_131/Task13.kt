@@ -1,6 +1,10 @@
 package lms_131
 
 fun task13(sentence: String): String {
+  val stringList=sentence.trim().splitToSequence(' ').toList()
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    return TODO()
+}
+fun main (){
+    println(task13(sentence="this This THIS is still the very very same "))
 }

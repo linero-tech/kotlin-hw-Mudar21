@@ -1,3 +1,6 @@
 package lms_133
 
-// TODO(Create your function here)
+fun remover(sentence: String): String = sentence.replace(Regex("[aeiouAEIOU]"), "")
+fun main() {
+    println(remover(sentence = "Sweden is nice"))
+}

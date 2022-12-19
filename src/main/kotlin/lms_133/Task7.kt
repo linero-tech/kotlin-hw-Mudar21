@@ -1,19 +1,22 @@
 package lms_133
 
-fun censorship(input: String): String {
-    var result = ""
-    var foo = ""
-    var listOfWords = input.split(' ')
+fun censorship(sentence: String): String {
+    val listOfWords = sentence.split(" ")
+    val result = mutableListOf<String>()
+
     listOfWords.forEach { word ->
-        if (word.length > 4) {
-            for (i in word) foo += "*"
-            result += input.replace(word, foo)
+        result += if (word.replace(Regex("[.,;:]"), "").length > 4) {
+            word.replace(Regex("\\w"), "*")
+        } else {
+            word
         }
     }
-    return result
+    return result.joinToString(separator = " ")
 }
-
-
 fun main() {
-    println(censorship(input = "I what in whatever"))
+    println(censorship(sentence = "I live in Sweden"))
+    println(censorship(sentence = "abc abcd abcdef"))
+    println(censorship(sentence = "abc abcdef abcd"))
+    println(censorship(sentence = "abc xyz"))
+    println(censorship(sentence = ""))
 }

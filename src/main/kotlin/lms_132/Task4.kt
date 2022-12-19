@@ -13,5 +13,5 @@ fun task4(sentence: String?): Map<Char, Int> {
     return result
 }
 fun main() {
-    println(task4(sentence = "HELLO"))
+    println(task4(sentence = "alooo"))
 }

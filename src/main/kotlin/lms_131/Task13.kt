@@ -16,5 +16,5 @@ fun task13(sentence: String): String {
     return result
 }
 fun main(){
-    println(task13("this this THIS is still the very very same"))
+    println(task13("this  THIS is still the very very same"))
 }

@@ -2,7 +2,8 @@ package lms_131
 
 fun task13(sentence: String): String {
 
-    val words = sentence.toLowerCase().split("\\w+|\\s+".toRegex())
+    val words = sentence.toLowerCase().split(",").map { it.trim() }
+
     val counting = words.groupingBy { it }.eachCount()
 
     var result = ""

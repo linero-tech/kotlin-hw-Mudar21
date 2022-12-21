@@ -2,7 +2,7 @@ package lms_131
 
 fun task13(sentence: String): String {
 
-    val words = sentence.toLowerCase().split(",").map { it.trim() }
+    val words = sentence.toLowerCase().replace(' ', ',').split(",").map { it.trim() }
 
     val counting = words.groupingBy { it }.eachCount()
 

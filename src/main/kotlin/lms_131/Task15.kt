@@ -16,5 +16,5 @@ fun task15(sentence: String): Map<Char, Int> {
 }
 
 fun main() {
-    println(task15("This is the Very small Text"))
+    println(task15("This is the a small Text"))
 }

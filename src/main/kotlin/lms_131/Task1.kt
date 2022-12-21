@@ -12,5 +12,5 @@ fun task1(): Map<Int, Int> {
 }
 
 fun main() {
-    println(task1())
+    task1()
 }

@@ -17,7 +17,7 @@ fun main() {
     println(
         task9(
             grades = mapOf(
-                "Ana" to listOf(4.0, 4.5, 5.0),
+                "mane" to listOf(4.0, 4.5, 5.0),
                 "John" to listOf(5.0, 5.0, 3.0),
                 "Lise" to listOf(5.0, 5.0, 5.0)
             )

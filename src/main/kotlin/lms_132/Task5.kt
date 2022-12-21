@@ -20,5 +20,5 @@ fun task5(word: String?): Boolean {
 }
 
 fun main() {
-    println(task5(word = "UNCOPYRIGHTABLE"))
+    println(task5(word = "anything"))
 }

@@ -1,3 +1,18 @@
 package lms_135
 
-// TODO(Create your class here)
+class Hero {
+    var health = 10
+    var level = 0
+
+    fun sick() {
+        health--
+    }
+
+    fun heal() {
+        health++
+    }
+
+    fun attack() {
+        level++
+    }
+}

@@ -29,3 +29,6 @@ fun task14(sentence: String): Char {
     result = maxKey
     return result
 }
+fun main (){
+    task14(sentence = "I am it")
+}
